@@ -1,3 +1,36 @@
+.todos-los-articulos {
+    margin-left: 15%;
+    margin-right: 30%;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+.todos-los-articulos > h1, .articulo {
+    margin: 10px;
+    padding: 5px;
+}
+
+.articulo {
+    background: white;
+}
+
+.articulo > h2, p {
+    margin: 4px;
+    font-size: 90%;
+}
+
+aside {
+    width: 10%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+}
+
+h1{
+    text-align: center;
+}
 
 button{
     border-radius: 4px;
@@ -19,4 +52,5 @@ body{
     background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
     background-attachment: fixed;
 }
+
 
