@@ -1,2 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to use Docker?</title>
+</head>
+<body>
+    <header>
 
-asfsdf
+        <div class = "tituloUseDocker">
+            <h1><u> What is docker and how to use Docker</u></h1>
+        </div>
+    
+    <pre>
+    Docker is defined as an open source project that provides a system-level virtualization and abstraction layer
+    operational, through the installation of software containers.
+    Surely you will have stayed as you were. Relax, it's normal. The best way to explain what Docker is and what it is useful for
+    is to illustrate it with a situation that, surely, has happened to you a few times. Let's see if it sounds like you.
+    Imagine that you want to install a new technology on your computer / server, for example, a new self-hosted Web application
+    that you just discovered and want to try, or a service like an MQQT broker that you want to install on your server.
+    </pre>    
+
+    <pre>
+    When you have to install multiple technologies on the same computer. One database sticks with the other, 
+    this service with that one, and the web server with the other one. As we have more things installed on the 
+    same machine, everything starts to get more and more complicated. 
+    </pre>
+
+    <pre>
+    But it could still get worse! When you want to uninstall something you have to play not to pass the thin 
+    red line of, or remove less and progressively fill our computer with garbage, or remove more and make things 
+    that you did not want stop working.
+    </pre>
+
+    </header>
+
+    <section>
+
+        <h2>DOCKER COMES TO THE RESCUE</h2>
+
+    <pre>
+    This is the situation that Docker is trying to solve. Docker works with images and containers. In short, 
+    an image is a package that includes "everything that a certain technology needs" to function.
+    Images are initialized in one or more instances that are called containers. In this way you only have to 
+    create the container and a function. Of course, we can even have several containers of the same image running simultaneously.
+    Many developers offer their applications as a container. Some of them are on https://hub.docker.com/, 
+    the Docker repository. On other occasions, developers host their dockers on their own website, or on github, among others.
+    </pre>
+
+    <img class="imagenDocker" src="https://avanttic.com/app/uploads/2017/02/vida11.png"/>
+    </section>
+    
+    <section>
+
+        <h2>BASIC DOCKER COMMANDS</h2>
+        <h3>COMMANDS WITH IMAGES</h3>
+        <pre>
+            <table class= "tabla1">
+                <tr>
+                    <td>Download an image ‘imagename’ in its ‘version’ version: </td>
+                    <td><b>docker pull nombreImagen:version</b></td>
+                </tr>
+
+                <tr>
+                    <td>List available images: </td>
+                    <td><b>docker images -a: </b></td>
+                </tr>
+
+                <tr>
+                    <td>Delete image (if it doesn't have an associated container):</td>
+                    <td><b>docker rmi nombreImagen</b></td>
+                </tr>
+                
+                <tr>
+                    <td>Execute an image 'ImageName' in a container 'ContainerName': </td>
+                    <td><b>docker run -d --name nombreContenedor -p puertoHost:puertoGuest nombreImagen</b></td>
+                </tr>
+            </table>
+        </pre>
+
+        <h3>COMMANDS WITH CONTAINERS</h3>
+
+        <pre>
+            <table class= "tabla2">
+                <tr>
+                    <td>List all containers (running or not): </td>
+                    <td><b>docker ps -a</b></td>
+                </tr>
+
+                <tr>
+                    <td>List containers running: </td>
+                    <td><b>docker ps</b></td>
+                </tr>
+
+                <tr>
+                    <td>Restart the container 'containerName' (or containerID):</td>
+                    <td><b>docker restart containerName</b></td>
+                </tr>
+                
+                <tr>
+                    <td>Stop the container 'containerName' (or containerID): </td>
+                    <td><b>docker stop containerName</b></td>
+                </tr>
+
+                <tr>
+                    <td>Delete the container 'containerName' (or containerID): </td>
+                    <td><b>docker rm containerName</b></td>
+                </tr>
+            </table>
+        </pre>
+
+    </section>
+
+    <footer>
+
+        <button type="button" onclick="window.location.href='index.html'">Volver a Inicio</button>
+
+    </footer>
+
+</body>
+</html>
