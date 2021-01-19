@@ -53,4 +53,8 @@ body{
     background-attachment: fixed;
 }
 
+canvas{
+    background-color:#333;  
+}
+
 
