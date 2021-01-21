@@ -54,8 +54,24 @@ body{
     background-attachment: fixed;
 }
 
+
+table{
+    width: 50%;
+    margin-left: 1%;
+    border: 2px solid grey;
+}
+
+td{ 
+    border: 3px solid grey;
+}
+
 canvas{
     background-color:#333;  
 }
 
-
+.imagenDocker{
+    width: 550px;
+    height: 341px;
+    margin-left: 30px;
+    display: block;
+}
