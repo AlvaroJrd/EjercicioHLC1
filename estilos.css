@@ -3,6 +3,7 @@
     margin-right: 30%;
     padding: 5px;
     background-color: lightgray;
+    margin-top: -10%;
 }
 
 .todos-los-articulos > h1, .articulo {
@@ -53,6 +54,7 @@ body{
     background-attachment: fixed;
 }
 
+
 table{
     width: 50%;
     margin-left: 1%;
@@ -61,6 +63,10 @@ table{
 
 td{ 
     border: 3px solid grey;
+}
+
+canvas{
+    background-color:#333;  
 }
 
 .imagenDocker{
